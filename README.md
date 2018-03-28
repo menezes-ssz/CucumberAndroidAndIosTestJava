@@ -50,17 +50,71 @@ $ cucumber
 5. Implement your steps in your class or classes inside **steps_definition/**
 ```Cucumber
 
-Given("i'am in Calculator Screen") do
-  pending # Write code here that turns the phrase above into concrete actions
-end
+@Given("^i'am in Calculator Screen$")
+public void i_am_in_Calculator_Screen() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
 
-When("sum two numbers") do
-  pending # Write code here that turns the phrase above into concrete actions
-end
+@When("^sum two numbers$")
+public void sum_two_numbers() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
 
-Then("show the result of sum") do
-  pending # Write code here that turns the phrase above into concrete actions
-end
+@Then("^show the result of sum$")
+public void show_the_result_of_sum() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+@When("^subtract two numbers$")
+public void subtract_two_numbers() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+@Then("^show the result of subtraction$")
+public void show_the_result_of_subtraction() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+@When("^divide two numbers$")
+public void divide_two_numbers() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+@Then("^show the result of division$")
+public void show_the_result_of_division() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+@When("^multiply two numbers$")
+public void multiply_two_numbers() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+@Then("^show the result of multiplication$")
+public void show_the_result_of_multiplication() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+@When("^divide by zero$")
+public void divide_by_zero() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+@Then("^show the message cannot divide by zero!$")
+public void show_the_message_cannot_divide_by_zero() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
 
 ```
 
