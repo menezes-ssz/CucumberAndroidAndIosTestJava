@@ -43,13 +43,13 @@ Given i'am in Calculator Screen
 When sum two numbers
 Then show the result of sum
 ```
-4. Run cucumber inside **resources/**
+4. Run mvn inside **resources/**
 ```
-$ cucumber
+$ mvn clean test
 ```
 5. Implement your steps in your class or classes inside **steps_definition/**
-```Cucumber
 
+```
 @Given("^i'am in Calculator Screen$")
 public void i_am_in_Calculator_Screen() throws Throwable {
     // Write code here that turns the phrase above into concrete actions
@@ -61,62 +61,7 @@ public void sum_two_numbers() throws Throwable {
     // Write code here that turns the phrase above into concrete actions
     throw new PendingException();
 }
-
-@Then("^show the result of sum$")
-public void show_the_result_of_sum() throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-@When("^subtract two numbers$")
-public void subtract_two_numbers() throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-@Then("^show the result of subtraction$")
-public void show_the_result_of_subtraction() throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-@When("^divide two numbers$")
-public void divide_two_numbers() throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-@Then("^show the result of division$")
-public void show_the_result_of_division() throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-@When("^multiply two numbers$")
-public void multiply_two_numbers() throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-@Then("^show the result of multiplication$")
-public void show_the_result_of_multiplication() throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-@When("^divide by zero$")
-public void divide_by_zero() throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-@Then("^show the message cannot divide by zero!$")
-public void show_the_message_cannot_divide_by_zero() throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
-}
-
-```
+```   
 
 6. Run the tests with maven sending plataform name by parameter, "Ios" or "Android"
 ```
